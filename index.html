@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Web Developer & Manager</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Print Button (Visible only on screen) -->
+    <button id="printBtn" onclick="printResume()">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9V2h12v7"></path>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <path d="M6 14h12v8H6z"></path>
+        </svg>
+        Print / Save PDF
+    </button>
+
+    <div class="resume-container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <!-- Profile Image -->
+            <div class="profile-section">
+                <!-- Using a placeholder image. Replace src with your local photo path, e.g., "images/me.jpg" -->
+                <img src="./js/My Passport.jpeg" alt="Profile Picture" class="profile-img">
+            </div>
+
+            <!-- Contact Info -->
+            <div class="sidebar-block">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li>
+                        <!-- Email Icon -->
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>kilimayahya@gmail.com</span>
+                    </li>
+                    <li>
+                        <!-- Phone Icon -->
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>+255 652 592 649</span>
+                    </li>
+                    <li>
+                        <!-- Web Icon -->
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span>www.markdev.com</span>
+                    </li>
+                    <li>
+                        <!-- Map Icon -->
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Kinondoni, Dar es salaam, Tanzania</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skills -->
+            <div class="sidebar-block">
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    <li>HTML5 / CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React & Vue</li>
+                    <li>Node.js</li>
+                    <li>Web Project Management</li>
+                    <li>UI / UX Design</li>
+                </ul>
+            </div>
+
+            <!-- Education -->
+            <div class="sidebar-block">
+                <h3>Education</h3>
+                <div class="edu-item">
+                    <span class="degree">BS in Web Development</span>
+                    <span class="school">California State Univ.</span>
+                    <span class="date">2012 - 2016</span>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="sidebar-block">
+                <h3>Languages</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="lang-name">Swahili</span>
+                        <span class="lang-level">Native</span>
+                    </li>
+                    <li>
+                        <span class="lang-name">English</span>
+                        <span class="lang-level">Professional</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <h1 class="name">Yahya Kilima</h1>
+                <h2 class="title">Senior Web Developer & Manager</h2>
+            </header>
+
+            <!-- Work Experience -->
+            <section class="section">
+                <h3 class="section-title">Work Experience</h3>
+                
+                <!-- Job 1 -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <span class="job-company">Google</span>
+                        <span class="job-date">09/2018 - Present</span>
+                    </div>
+                    <h4 class="job-role">Web Developer</h4>
+                    <ul class="job-desc">
+                        <li>Lead developer for core application features.</li>
+                        <li>Optimized web performance and accessibility standards.</li>
+                        <li>Collaborated with cross-functional teams to ship products.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-item">
+                    <div class="job-header">
+                        <span class="job-company">YouTube</span>
+                        <span class="job-date">03/2016 - 09/2018</span>
+                    </div>
+                    <h4 class="job-role">Web Designer</h4>
+                    <ul class="job-desc">
+                        <li>Designed responsive interfaces for video platforms.</li>
+                        <li>Created wireframes and high-fidelity prototypes.</li>
+                        <li>Implemented front-end code using HTML, CSS, JS.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
